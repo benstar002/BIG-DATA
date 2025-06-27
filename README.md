@@ -9,7 +9,8 @@ Group Members:
 
 
 #Question 1. 
-def input_student_info():
+
+    def input_student_info():
 
     name = input("Enter student's name: ")
     age = int(input("Enter student's age: "))
@@ -26,13 +27,13 @@ def input_student_info():
 
     return name, age, grades
 
-def calculate_average(grades):
+    def calculate_average(grades):
     
     if len(grades) == 0:
         return 0
     return sum(grades) / len(grades)
 
-def display_student_info(name, age, grades, average):
+    def display_student_info(name, age, grades, average):
    
     print("\n--- Student Information ---")
     print(f"Name: {name}")
@@ -40,16 +41,16 @@ def display_student_info(name, age, grades, average):
     print("Grades:", ", ".join([str(g) for g in grades]))
     print(f"Average Grade: {average:.2f}")
 
-def main():
+    def main():
    
     name, age, grades = input_student_info()
     average = calculate_average(grades)
     display_student_info(name, age, grades, average)
-main()
+    main()
 
 
 # Question 2
-def check_palindrome():
+    def check_palindrome():
    
     user_input = input("Enter a string: ")
 
@@ -61,10 +62,10 @@ def check_palindrome():
         print("Yes, it is a palindrome")
     else:
         print("No, it is not a palindrome")
-check_palindrome()
+     check_palindrome()
 
 # Question 3
-def process_texts():
+    def process_texts():
     
     text1 = input("Enter the first text: ")
     text2 = input("Enter the second text: ")
@@ -81,5 +82,5 @@ def process_texts():
     return characters
 
 
-chars = process_texts()
-print("Characters in combined text:", chars)
+    chars = process_texts()
+    print("Characters in combined text:", chars)
