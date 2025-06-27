@@ -51,8 +51,6 @@ def check_palindrome():
         print("Yes, it is a palindrome")
     else:
         print("No, it is not a palindrome")
-
-# Run the function
 check_palindrome()
 
 # Question 3
